@@ -8,6 +8,7 @@ from tqdm import tqdm
 orig_structs = "/Users/claireleblanc/Downloads/PED00159e002_orig_traj.pdb"
 generated_structs = "/Users/claireleblanc/Downloads/PED00159e002_GAN_generated_traj_500.pdb"
 
+# Function to get rmsd
 def cal_rmsd(input_data, output, test_size):
     test = deepcopy(input_data)
     examine = deepcopy(output)
